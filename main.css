@@ -1,3 +1,8 @@
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #444;
+}
+
 .container {
   margin: 20px auto;
   width: 960px;
@@ -10,4 +15,11 @@ h1 {
   padding-left: 50px;
   background: transparent url('./icon.png') left top no-repeat;
   background-size: 40px 40px;
+}
+
+h2 {
+  color: #999;
+  font-weight: 300;
+  font-size: 20px;
+  padding-left: 50px;
 }
