@@ -5,16 +5,16 @@ body {
 
 .container {
   margin: 20px auto;
-  width: 960px;
+  width: 800px;
 }
 
 h1 {
   font-weight: normal;
   font-size: 30px;
   line-height: 40px;
-  padding-left: 50px;
+  padding-left: 70px;
   background: transparent url('./icon.png') left top no-repeat;
-  background-size: 40px 40px;
+  background-size: 60px 60px;
 }
 
 h2 {
