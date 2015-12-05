@@ -8,18 +8,33 @@ body {
   width: 800px;
 }
 
+.header {
+  margin-top: 60px;
+}
+
+.slogan {
+  background: transparent url('./icon.png') center 5px no-repeat;
+  background-size: 120px 120px;
+  padding-top: 140px;
+}
+
 h1 {
+  text-align: center;
   font-weight: normal;
   font-size: 30px;
   line-height: 40px;
-  padding-left: 70px;
-  background: transparent url('./icon.png') left top no-repeat;
-  background-size: 60px 60px;
+  margin: 0;
 }
 
 h2 {
+  text-align: center;
   color: #999;
   font-weight: 300;
   font-size: 20px;
-  padding-left: 50px;
+  margin: 0;
+}
+
+.twitter {
+  margin: 50px auto;
+  text-align: center;
 }
