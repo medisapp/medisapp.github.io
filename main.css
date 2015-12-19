@@ -5,7 +5,8 @@ body {
 
 .container {
   margin: 20px auto;
-  width: 800px;
+  padding: 0 20px;
+  max-width: 1000px;
 }
 
 .header {
@@ -42,4 +43,34 @@ h2 {
 .screen {
   margin: 50px auto;
   text-align: center;
+}
+
+.screen img {
+  max-width: 100%;
+  height: auto;
+}
+
+.footer {
+  border-top: 1px solid #eee;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.footer a {
+  margin: 10px 5px 0;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+}
+
+.footer .twitter {
+  background-color: #55acee;
+  -webkit-mask-image: url(twitter.svg);
+  mask-image: url(twitter.svg);
+}
+
+.footer .github {
+  background-color: #444;
+  -webkit-mask-image: url(github.svg);
+  mask-image: url(github.svg);
 }
