@@ -64,13 +64,9 @@ h2 {
 }
 
 .footer .twitter {
-  background-color: #55acee;
-  -webkit-mask-image: url(twitter.svg);
-  mask-image: url(twitter.svg);
+  fill: #55acee;
 }
 
 .footer .github {
-  background-color: #444;
-  -webkit-mask-image: url(github.svg);
-  mask-image: url(github.svg);
+  fill: #444;
 }
