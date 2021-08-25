@@ -36,6 +36,15 @@ body.zh-cn .no-cn {
   padding-top: 140px;
 }
 
+.slogan h2 {
+  text-align: center;
+  font-weight: 300;
+  font-size: 20px;
+  color: #999;
+  margin: 5px 0 20px;
+  border: 0;
+}
+
 h1 {
   text-align: center;
   font-weight: normal;
