@@ -1,15 +1,16 @@
 :root {
-  --font-title: 'Montserrat', sans-serif;
+  --font-title: "Montserrat", sans-serif;
   --spacing-left-main: 140px;
 }
 
 html {
   background: #fbf2f4;
 }
+
 body {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 16px;
   color: #2a2a2a;
+  font-family: Source Sans Pro, sans-serif;
+  font-size: 16px;
 }
 
 a {
@@ -30,11 +31,7 @@ h1, h2, h3, h4, h5, h6 {
   display: none;
 }
 
-.no-cn {
-  display: block;
-}
-
-body.zh-cn .cn {
+.no-cn, body.zh-cn .cn {
   display: block;
 }
 
@@ -43,9 +40,9 @@ body.zh-cn .no-cn {
 }
 
 .container {
+  max-width: 1000px;
   margin: 28px auto;
   padding: 0 20px;
-  max-width: 1000px;
 }
 
 .main-header {
@@ -55,8 +52,8 @@ body.zh-cn .no-cn {
 
 .logo {
   flex: 1;
-  display: flex;
   align-items: center;
+  display: flex;
 }
 
 .logo img {
@@ -69,13 +66,13 @@ body.zh-cn .no-cn {
 }
 
 nav a {
-  background: rgba(227, 199, 208, 0.2);
   color: #595555;
-  text-decoration: none;
-  padding: 12px 18px;
+  background: #e3c7d033;
   border-radius: 6px;
-  transition: background 0.2s;
   margin-left: 4px;
+  padding: 12px 18px;
+  text-decoration: none;
+  transition: background .2s;
 }
 
 nav a img {
@@ -83,7 +80,7 @@ nav a img {
 }
 
 nav a:hover {
-  background: rgba(227, 199, 208, 0.4);
+  background: #e3c7d066;
 }
 
 .download {
@@ -91,37 +88,37 @@ nav a:hover {
 }
 
 .slogan {
-  margin-top: 60px;
   text-align: center;
+  margin-top: 60px;
 }
 
 .slogan__subtitle {
-  font-weight: 300;
-  font-size: 22px;
-  line-height: 1.4;
   margin: 10px auto;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 1.4;
 }
 
 .slogan .subtitle {
+  border: none;
   margin: 0;
-  border: 0;
 }
 
 h1 {
-  font-weight: bold;
-  font-size: 48px;
-  line-height: 1.6;
   margin: 0;
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 1.6;
 }
 
 .twitter {
-  margin: 50px auto;
   text-align: center;
+  margin: 50px auto;
 }
 
 .screen {
-  margin: 10px auto 20px;
   text-align: center;
+  margin: 10px auto 20px;
 }
 
 .screen img {
@@ -130,12 +127,9 @@ h1 {
 }
 
 .features {
-  display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 80px;
-}
-
-.features__item {
+  display: grid;
 }
 
 .features__item__title {
@@ -143,48 +137,52 @@ h1 {
 }
 
 .features__item__desc {
-  color: rgb(78, 73, 73);
+  color: #4e4949;
   line-height: 1.6;
 }
 
 .features__item__desc em {
   background: #f6efd3;
-  padding: 0.1em 0.3em;
   border-radius: 2px;
+  padding: .1em .3em;
 }
 
 .features__item__desc img {
-  margin-top: 24px;
-  border-radius: 8px;
   width: 100%;
+  border-radius: 8px;
+  margin-top: 24px;
 }
 
 .footer {
+  text-align: center;
   padding-top: 10px;
   padding-bottom: 10px;
-  text-align: center;
 }
 
 .footer a {
+  color: #444;
   margin: 10px 5px 0;
   display: inline-block;
-  color: #444;
 }
 
 .footer .twitter {
+  -webkit-mask-image: url("twitter.330c8b65.svg");
   background-color: #55acee;
-  -webkit-mask-image: url(twitter.svg);
-  mask-image: url(twitter.svg);
+  -webkit-mask-image: url("twitter.330c8b65.svg");
+  mask-image: url("twitter.330c8b65.svg");
 }
 
 .footer .github {
+  -webkit-mask-image: url("github.185aff6f.svg");
   background-color: #444;
-  -webkit-mask-image: url(github.svg);
-  mask-image: url(github.svg);
+  -webkit-mask-image: url("github.185aff6f.svg");
+  mask-image: url("github.185aff6f.svg");
 }
 
 .ph {
+  place-content: center;
   padding: 10px 0 20px;
   display: flex;
-  place-content: center;
 }
+
+/*# sourceMappingURL=terms.e5980c4e.css.map */
