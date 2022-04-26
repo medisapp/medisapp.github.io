@@ -125,10 +125,10 @@ nav a:hover {
 }
 
 h1 {
-  margin: 0 0 24px;
+  margin: 0;
   font-size: 48px;
   font-weight: bold;
-  line-height: 1.2;
+  line-height: 1.6;
 }
 
 .twitter {
@@ -203,10 +203,6 @@ h1 {
   place-content: center;
   padding: 10px 0 20px;
   display: flex;
-}
-
-.splide__arrow {
-  background: #ddd8d880 !important;
 }
 
 /*# sourceMappingURL=terms.76c1c5bf.css.map */

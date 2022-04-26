@@ -20,8 +20,5 @@
     "parcel": "^2.5.0",
     "posthtml-include": "^1.7.3",
     "posthtml-shorten": "^1.0.0"
-  },
-  "dependencies": {
-    "@splidejs/splide": "^4.0.1"
   }
 }
