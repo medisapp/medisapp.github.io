@@ -186,17 +186,17 @@ h1 {
 }
 
 .footer .twitter {
-  -webkit-mask-image: url(twitter.330c8b65.svg);
+  -webkit-mask-image: url("twitter.330c8b65.svg");
   background-color: #55acee;
-  -webkit-mask-image: url(twitter.330c8b65.svg);
-  mask-image: url(twitter.330c8b65.svg);
+  -webkit-mask-image: url("twitter.330c8b65.svg");
+  mask-image: url("twitter.330c8b65.svg");
 }
 
 .footer .github {
-  -webkit-mask-image: url(github.185aff6f.svg);
+  -webkit-mask-image: url("github.185aff6f.svg");
   background-color: #444;
-  -webkit-mask-image: url(github.185aff6f.svg);
-  mask-image: url(github.185aff6f.svg);
+  -webkit-mask-image: url("github.185aff6f.svg");
+  mask-image: url("github.185aff6f.svg");
 }
 
 .ph {
@@ -209,13 +209,25 @@ h1 {
   background: #ddd8d880 !important;
 }
 
-.copyright {
+.cr {
+  padding-right: 4px;
   position: relative;
 }
 
-.copyright:after {
+.cr:after {
   content: "©";
-  font-size: .4em;
+  font-size: max(.4em, 10px);
+  font-weight: normal;
+  line-height: 1;
+  position: absolute;
+  top: 0;
 }
 
-/*# sourceMappingURL=terms.76c1c5bf.css.map */
+.copyright-statement {
+  color: #cec6c6;
+  max-width: 700px;
+  margin: 40px auto 0;
+  font-size: 12px;
+}
+
+/*# sourceMappingURL=terms.b1276d39.css.map */

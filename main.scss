@@ -217,3 +217,24 @@ h1 {
 .splide__arrow {
   background: rgba(221, 216, 216, 0.5) !important;
 }
+
+.cr {
+  position: relative;
+  padding-right: 4px;
+
+  &::after {
+    content: "\00A9";
+    font-size: max(0.4em, 10px);
+    position: absolute;
+    line-height: 1;
+    top: 0;
+    font-weight: normal;
+  }
+}
+
+.copyright-statement {
+  font-size: 12px;
+  color: rgb(206, 198, 198);
+  margin: 40px auto 0;
+  max-width: 700px;
+}

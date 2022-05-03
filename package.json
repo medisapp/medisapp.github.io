@@ -17,6 +17,7 @@
   "homepage": "https://github.com/medisapp/medisapp.github.io#readme",
   "devDependencies": {
     "@parcel/transformer-less": "^2.5.0",
+    "@parcel/transformer-sass": "^2.5.0",
     "parcel": "^2.5.0",
     "posthtml-include": "^1.7.3",
     "posthtml-shorten": "^1.0.0"
