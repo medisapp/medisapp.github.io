@@ -1,0 +1,1 @@
+{"mappings":"AAAA,MAAM,CAAC,KAAK,CAAC;IAAE,MAAM,EAAE,OAAO,CAAC,GAAG,CAAC,SAAS;CAAE,CAAC,CAAC","sources":["pricing.js"],"sourcesContent":["Paddle.Setup({ vendor: process.env.VENDOR_ID });\n"],"names":[],"version":3,"file":"pricing.1a99ae82.js.map","sourceRoot":"/__parcel_source_root/"}

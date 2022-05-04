@@ -1,0 +1,60 @@
+.pricing {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.pricing__item {
+  background-color: white;
+  padding: 20px 40px;
+  border-radius: 6px;
+  width: 300px;
+  margin: 40px auto;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.pricing__amount {
+  font-size: 24px;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-bottom: 4px solid #ddd;
+
+  span {
+    font-size: 36px;
+  }
+}
+
+.pricing__details {
+  list-style: none;
+  padding: 0;
+
+  li {
+    line-height: 2;
+    background: transparent url(./assets/ok.svg) left center no-repeat;
+    background-size: 24px 24px;
+    padding-left: 32px;
+  }
+}
+
+.pricing__button {
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: #f24e3d;
+  color: white;
+  border: 0;
+  border-radius: 8px;
+  padding: 10px;
+  display: block;
+  width: 100%;
+  transition: opacity 0.2s;
+  opacity: 0.8;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.question {
+  line-height: 1.6;
+  margin-bottom: 60px;
+}

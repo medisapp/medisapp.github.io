@@ -50,6 +50,21 @@ body.zh-cn .no-cn {
   display: flex;
 }
 
+@media (max-width: 800px) {
+  .main-header {
+    flex-direction: column;
+  }
+
+  .logo {
+    margin-bottom: 20px;
+  }
+
+  nav a {
+    margin-bottom: 10px;
+    display: block;
+  }
+}
+
 .logo {
   flex: 1;
   align-items: center;
@@ -67,6 +82,7 @@ body.zh-cn .no-cn {
 
 nav a {
   color: #595555;
+  text-align: center;
   background: #e3c7d033;
   border-radius: 6px;
   margin-left: 4px;
@@ -87,6 +103,10 @@ nav a:hover {
   margin: 40px 0 20px;
 }
 
+.screenshot img {
+  max-width: 100%;
+}
+
 .slogan {
   text-align: center;
   margin-top: 60px;
@@ -105,10 +125,10 @@ nav a:hover {
 }
 
 h1 {
-  margin: 0;
+  margin: 0 0 24px;
   font-size: 48px;
   font-weight: bold;
-  line-height: 1.6;
+  line-height: 1.2;
 }
 
 .twitter {
@@ -130,6 +150,12 @@ h1 {
   grid-template-columns: 1fr 1fr;
   gap: 80px;
   display: grid;
+}
+
+@media (max-width: 800px) {
+  .features {
+    grid-template-columns: 1fr;
+  }
 }
 
 .features__item__title {
@@ -159,12 +185,6 @@ h1 {
   padding-bottom: 10px;
 }
 
-.footer a {
-  color: #444;
-  margin: 10px 5px 0;
-  display: inline-block;
-}
-
 .footer .twitter {
   -webkit-mask-image: url("twitter.330c8b65.svg");
   background-color: #55acee;
@@ -185,4 +205,29 @@ h1 {
   display: flex;
 }
 
-/*# sourceMappingURL=terms.e5980c4e.css.map */
+.splide__arrow {
+  background: #ddd8d880 !important;
+}
+
+.cr {
+  padding-right: 4px;
+  position: relative;
+}
+
+.cr:after {
+  content: "®";
+  font-size: max(.4em, 10px);
+  font-weight: normal;
+  line-height: 1;
+  position: absolute;
+  top: 0;
+}
+
+.copyright-statement {
+  color: #cec6c6;
+  max-width: 700px;
+  margin: 40px auto 0;
+  font-size: 12px;
+}
+
+/*# sourceMappingURL=index.b1276d39.css.map */
