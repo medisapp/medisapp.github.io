@@ -215,7 +215,7 @@ h1 {
 }
 
 .cr:after {
-  content: "©";
+  content: "®";
   font-size: max(.4em, 10px);
   font-weight: normal;
   line-height: 1;
