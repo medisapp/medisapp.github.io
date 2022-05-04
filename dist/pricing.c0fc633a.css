@@ -9,11 +9,18 @@
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 6px;
-  margin: 40px auto;
+  margin: 40px auto 60px;
   padding: 20px 40px;
+  transition: box-shadow .2s;
+}
+
+.pricing__item:hover {
+  background-color: #fefefe;
+  box-shadow: 0 0 10px #0000001a;
 }
 
 .pricing__amount {
+  color: #999;
   border-bottom: 4px solid #ddd;
   margin-bottom: 15px;
   padding-bottom: 15px;
@@ -21,6 +28,7 @@
 }
 
 .pricing__amount span {
+  color: #333;
   font-size: 36px;
 }
 
@@ -55,6 +63,10 @@
 .question {
   margin-bottom: 60px;
   line-height: 1.6;
+}
+
+.question h3 {
+  margin-bottom: -8px;
 }
 
 /*# sourceMappingURL=pricing.c0fc633a.css.map */
