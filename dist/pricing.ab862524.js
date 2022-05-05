@@ -530,7 +530,7 @@ Paddle.Setup({
     vendor: Number("5932")
 });
 Paddle.Environment.set("sandbox");
-window.PRODUCT_ID = Number("27798");
+window.PRODUCT_ID = Number("28229");
 
 },{}]},["dbiQB","cQTi2"], "cQTi2", "parcelRequired246")
 

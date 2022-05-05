@@ -4,7 +4,9 @@
 }
 
 .pricing__item {
+  box-sizing: border-box;
   width: 300px;
+  max-width: 100%;
   text-align: left;
   background-color: #fff;
   border: 1px solid #ddd;
@@ -38,7 +40,7 @@
 }
 
 .pricing__details li {
-  background: url("ok.5533525c.svg") 0 / 24px 24px no-repeat;
+  background: url("ok.5533525c.svg") 0 4px / 24px 24px no-repeat;
   padding-left: 32px;
   line-height: 2;
 }
