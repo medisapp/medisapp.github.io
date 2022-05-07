@@ -12,6 +12,10 @@ body {
   color: #2a2a2a;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 a {
   color: #2a2a2a;
   text-decoration: none;
@@ -109,6 +113,8 @@ nav a {
 
 .download {
   margin: 40px 0 20px;
+  display: flex;
+  justify-content: center;
 }
 
 .screenshot {
@@ -165,7 +171,7 @@ h1 {
 
 @media (max-width: 800px) {
   .features {
-  grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
   }
 }
 
@@ -237,4 +243,40 @@ h1 {
   color: rgb(206, 198, 198);
   margin: 40px auto 0;
   max-width: 700px;
+}
+
+.download-raw-link {
+  margin-left: 10px;
+  display: flex;
+}
+
+.download-raw {
+  appearance: none;
+  -webkit-appearance: none;
+  border: 0;
+  background: #f24e3d;
+  border: 2px solid #e85343;
+  color: #fff;
+  border-radius: 8px;
+  text-align: left;
+  padding: 2px 20px;
+  margin: 0 0 4px 0;
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.2);
+  transition: background 0.2s;
+
+  &:hover {
+    background: #e85343;
+  }
+
+  &:active {
+    background: #e63b28;
+  }
+}
+
+.download-raw__version {
+  font-size: 10px;
+}
+
+.download-raw__title {
+  font-size: 18px;
 }

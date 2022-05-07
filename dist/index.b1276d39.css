@@ -13,6 +13,10 @@ body {
   font-size: 16px;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 a {
   color: #2a2a2a;
   text-decoration: none;
@@ -100,7 +104,9 @@ nav a:hover {
 }
 
 .download {
+  justify-content: center;
   margin: 40px 0 20px;
+  display: flex;
 }
 
 .screenshot img {
@@ -228,6 +234,40 @@ h1 {
   max-width: 700px;
   margin: 40px auto 0;
   font-size: 12px;
+}
+
+.download-raw-link {
+  margin-left: 10px;
+  display: flex;
+}
+
+.download-raw {
+  appearance: none;
+  color: #fff;
+  text-align: left;
+  background: #f24e3d;
+  border: 2px solid #e85343;
+  border-radius: 8px;
+  margin: 0 0 4px;
+  padding: 2px 20px;
+  transition: background .2s;
+  box-shadow: 0 0 2px #0003;
+}
+
+.download-raw:hover {
+  background: #e85343;
+}
+
+.download-raw:active {
+  background: #e63b28;
+}
+
+.download-raw__version {
+  font-size: 10px;
+}
+
+.download-raw__title {
+  font-size: 18px;
 }
 
 /*# sourceMappingURL=index.b1276d39.css.map */
