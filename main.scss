@@ -113,8 +113,34 @@ nav a {
 
 .download {
   margin: 40px 0 20px;
+}
+
+.download__buttons {
   display: flex;
   justify-content: center;
+}
+
+.download__homebrew {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+
+  p {
+    margin: 0;
+    color: #333;
+    opacity: 0.8;
+  }
+
+  pre {
+    margin: 10px 0;
+    border-radius: 2px;
+    padding: 4px 8px;
+    background: #d7d1d1;
+    opacity: 0.7;
+    width: min-content;
+  }
 }
 
 .screenshot {

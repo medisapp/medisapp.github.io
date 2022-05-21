@@ -104,9 +104,35 @@ nav a:hover {
 }
 
 .download {
-  justify-content: center;
   margin: 40px 0 20px;
+}
+
+.download__buttons {
+  justify-content: center;
   display: flex;
+}
+
+.download__homebrew {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  display: flex;
+}
+
+.download__homebrew p {
+  color: #333;
+  opacity: .8;
+  margin: 0;
+}
+
+.download__homebrew pre {
+  opacity: .7;
+  width: min-content;
+  background: #d7d1d1;
+  border-radius: 2px;
+  margin: 10px 0;
+  padding: 4px 8px;
 }
 
 .screenshot img {
