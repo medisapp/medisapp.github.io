@@ -115,32 +115,35 @@ nav a {
   margin: 40px 0 20px;
 }
 
+.reviews {
+  display: flex;
+  margin: 20px auto 0;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  background-color: rgba(0,0,0,0.05);
+  border-radius: 8px;
+  padding: 10px 20px;
+  width: max-content;
+
+  img {
+    position: relative;
+    top: -1px;
+    margin-right: 8px;
+  }
+
+  strong {
+    margin-right: 2px;
+  }
+}
+
+.reviews__note {
+  opacity: 0.6;
+}
+
 .download__buttons {
   display: flex;
   justify-content: center;
-}
-
-.download__homebrew {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: 20px;
-
-  p {
-    margin: 0;
-    color: #333;
-    opacity: 0.8;
-  }
-
-  pre {
-    margin: 10px 0;
-    border-radius: 2px;
-    padding: 4px 8px;
-    background: #d7d1d1;
-    opacity: 0.7;
-    width: min-content;
-  }
 }
 
 .screenshot {
@@ -299,10 +302,95 @@ h1 {
   }
 }
 
+.download-raw-container {
+  position: relative;
+  display: flex;
+
+  .homebrew-popover {
+    display: none;
+    position: absolute;
+    top: 0;
+    transform: translateY(-95%);
+    padding: 20px 0;
+
+    .homebrew-popover__content {
+      display: flex;
+      background: #fefefe;
+      border-radius: 8px;
+      border: 2px solid #efefef;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+      padding: 12px 10px;
+      position: relative;
+
+      p {
+        margin: 0;
+        font-size: 14px;
+        color: #333;
+        opacity: 0.8;
+      }
+
+      pre {
+        margin: 10px 10px 0;
+        border-radius: 2px;
+        padding: 4px 8px;
+        background: #d7d1d1;
+        opacity: 0.7;
+        box-sizing: border-box;
+      }
+
+      .arrow-down {
+        position: absolute;
+        bottom: 0;
+        transform: translateY(100%);
+        border-top-color: #fefefe;
+      }
+    }
+  }
+
+  &:hover {
+    .homebrew-popover {
+      display: block;
+    }
+  }
+}
+
 .download-raw__version {
   font-size: 10px;
 }
 
 .download-raw__title {
-  font-size: 18px;
+  white-space: nowrap;
+  font-size: 17px;
+}
+
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+
+  border-top: 10px solid #f00;
+}
+
+@media (max-width: 380px) {
+  .reviews {
+    flex-direction: column;
+    img {
+      margin-bottom: 4px;
+      margin-right: 0;
+    }
+  }
+
+  .download__buttons {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .download-raw-link {
+    margin-left: 0;
+    margin-top: 10px;
+  }
 }

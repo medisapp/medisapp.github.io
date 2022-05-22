@@ -107,32 +107,35 @@ nav a:hover {
   margin: 40px 0 20px;
 }
 
+.reviews {
+  width: max-content;
+  background-color: #0000000d;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto 0;
+  padding: 10px 20px;
+  font-size: 14px;
+  display: flex;
+}
+
+.reviews img {
+  margin-right: 8px;
+  position: relative;
+  top: -1px;
+}
+
+.reviews strong {
+  margin-right: 2px;
+}
+
+.reviews__note {
+  opacity: .6;
+}
+
 .download__buttons {
   justify-content: center;
   display: flex;
-}
-
-.download__homebrew {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-  display: flex;
-}
-
-.download__homebrew p {
-  color: #333;
-  opacity: .8;
-  margin: 0;
-}
-
-.download__homebrew pre {
-  opacity: .7;
-  width: min-content;
-  background: #d7d1d1;
-  border-radius: 2px;
-  margin: 10px 0;
-  padding: 4px 8px;
 }
 
 .screenshot img {
@@ -288,12 +291,95 @@ h1 {
   background: #e63b28;
 }
 
+.download-raw-container {
+  display: flex;
+  position: relative;
+}
+
+.download-raw-container .homebrew-popover {
+  padding: 20px 0;
+  display: none;
+  position: absolute;
+  top: 0;
+  transform: translateY(-95%);
+}
+
+.download-raw-container .homebrew-popover .homebrew-popover__content {
+  background: #fefefe;
+  border: 2px solid #efefef;
+  border-radius: 8px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  padding: 12px 10px;
+  display: flex;
+  position: relative;
+}
+
+.download-raw-container .homebrew-popover .homebrew-popover__content p {
+  color: #333;
+  opacity: .8;
+  margin: 0;
+  font-size: 14px;
+}
+
+.download-raw-container .homebrew-popover .homebrew-popover__content pre {
+  opacity: .7;
+  box-sizing: border-box;
+  background: #d7d1d1;
+  border-radius: 2px;
+  margin: 10px 10px 0;
+  padding: 4px 8px;
+}
+
+.download-raw-container .homebrew-popover .homebrew-popover__content .arrow-down {
+  border-top-color: #fefefe;
+  position: absolute;
+  bottom: 0;
+  transform: translateY(100%);
+}
+
+.download-raw-container:hover .homebrew-popover {
+  display: block;
+}
+
 .download-raw__version {
   font-size: 10px;
 }
 
 .download-raw__title {
-  font-size: 18px;
+  white-space: nowrap;
+  font-size: 17px;
+}
+
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-top: 10px solid red;
+  border-left: 10px solid #0000;
+  border-right: 10px solid #0000;
+}
+
+@media (max-width: 380px) {
+  .reviews {
+    flex-direction: column;
+  }
+
+  .reviews img {
+    margin-bottom: 4px;
+    margin-right: 0;
+  }
+
+  .download__buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .download-raw-link {
+    margin-top: 10px;
+    margin-left: 0;
+  }
 }
 
 /*# sourceMappingURL=index.b1276d39.css.map */
