@@ -229,6 +229,17 @@ h1 {
   padding-top: 10px;
   padding-bottom: 10px;
   text-align: center;
+
+  nav a {
+    font-size: 14px;
+    padding: 6px 10px;
+    opacity: 0.8;
+    background: transparent;
+
+    &:hover {
+      background: #e3c7d033;
+    }
+  }
 }
 
 .footer .twitter {

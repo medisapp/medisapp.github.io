@@ -220,6 +220,17 @@ h1 {
   padding-bottom: 10px;
 }
 
+.footer nav a {
+  opacity: .8;
+  background: none;
+  padding: 6px 10px;
+  font-size: 14px;
+}
+
+.footer nav a:hover {
+  background: #e3c7d033;
+}
+
 .footer .twitter {
   -webkit-mask-image: url("twitter.330c8b65.svg");
   background-color: #55acee;
