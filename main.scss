@@ -121,7 +121,7 @@ nav a {
   align-items: center;
   justify-content: center;
   font-size: 14px;
-  background-color: rgba(0,0,0,0.05);
+  background-color: rgba(0, 0, 0, 0.05);
   border-radius: 8px;
   padding: 10px 20px;
   width: max-content;
@@ -386,7 +386,7 @@ h1 {
   border-top: 10px solid #f00;
 }
 
-@media (max-width: 380px) {
+@media (max-width: 420px) {
   .reviews {
     flex-direction: column;
     img {
