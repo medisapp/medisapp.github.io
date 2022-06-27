@@ -6,9 +6,9 @@
 .pricing__item {
   box-sizing: border-box;
   background-color: white;
-  padding: 20px 40px;
+  padding: 40px 48px 32px;
   border-radius: 6px;
-  width: 380px;
+  width: 350px;
   max-width: 100%;
   margin: 40px auto 60px;
   border: 1px solid #ddd;
@@ -22,16 +22,25 @@
 }
 
 .pricing__amount {
-  font-size: 24px;
-  padding-bottom: 15px;
-  margin-bottom: 15px;
-  border-bottom: 4px solid #ddd;
-  color: #999;
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+}
 
-  span {
-    font-size: 36px;
-    color: #333;
-  }
+.pricing__type,
+.pricing__note {
+  text-align: center;
+  color: rgb(107, 114, 128);
+}
+
+.pricing__type {
+  font-weight: 500;
+  margin-bottom: 32px;
+  font-size: 16px;
+}
+
+.pricing__note {
+  font-size: 14px;
 }
 
 .pricing__details {
@@ -39,23 +48,26 @@
   padding: 0;
 
   li {
-    line-height: 2;
-    background: transparent url(./assets/ok.svg) left 4px no-repeat;
-    background-size: 24px 24px;
-    padding-left: 32px;
+    line-height: 1.2;
+    min-height: 28px;
+    margin-bottom: 4px;
+    background: transparent url(./assets/ok.svg) left top no-repeat;
+    background-size: 20px 20px;
+    padding-left: 24px;
   }
 }
 
 .pricing__button {
   appearance: none;
   -webkit-appearance: none;
-  background-color: #f24e3d;
+  background-color: rgb(225, 29, 72);
   color: white;
   border: 0;
   border-radius: 8px;
   padding: 10px;
   display: block;
   width: 100%;
+  margin: 32px 0 8px;
   transition: opacity 0.2s;
   opacity: 0.8;
 

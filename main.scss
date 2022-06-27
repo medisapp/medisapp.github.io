@@ -1,5 +1,6 @@
 :root {
   --font-title: "Montserrat", sans-serif;
+  --font-title: ui-sans-serif, system-ui, -apple-system, "system-ui", "Segoe UI";
   --spacing-left-main: 140px;
 }
 
@@ -7,7 +8,7 @@ html {
   background: #fbf2f4;
 }
 body {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: ui-sans-serif, system-ui, -apple-system, "system-ui", "Segoe UI";
   font-size: 16px;
   color: #2a2a2a;
 }

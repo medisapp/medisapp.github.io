@@ -1,5 +1,6 @@
 :root {
   --font-title: "Montserrat", sans-serif;
+  --font-title: ui-sans-serif, system-ui, -apple-system, "system-ui", "Segoe UI";
   --spacing-left-main: 140px;
 }
 
@@ -9,7 +10,7 @@ html {
 
 body {
   color: #2a2a2a;
-  font-family: Source Sans Pro, sans-serif;
+  font-family: ui-sans-serif, system-ui, -apple-system, "system-ui", Segoe UI;
   font-size: 16px;
 }
 
@@ -372,7 +373,7 @@ h1 {
   border-right: 10px solid #0000;
 }
 
-@media (max-width: 380px) {
+@media (max-width: 420px) {
   .reviews {
     flex-direction: column;
   }

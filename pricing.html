@@ -12,16 +12,14 @@
       <include src="fragments/header.html"></include>
       <section class="pricing">
         <h1>Pricing for individuals and teams</h1>
-        <div class="pricing__subtitle">
-          It is a perpetual license. All prices are displayed in USD and VAT may
-          apply.
-        </div>
         <div class="pricing__item">
-          <div class="pricing__amount"><span>$22</span> / license</div>
+          <div class="pricing__amount">$30</div>
+          <div class="pricing__type">One-time payment</div>
           <ul class="pricing__details">
             <li>1 user, up to 3 devices</li>
-            <li>Unlock all features</li>
+            <li>Yours to keep, forever</li>
             <li>Lifetime upgrades</li>
+            <li>30-day money back guarantee</li>
           </ul>
           <button id="buyButton" class="pricing__button">Buy Now</button>
           <script>
@@ -31,6 +29,7 @@
                 Paddle.Checkout.open({ product: PRODUCT_ID });
               });
           </script>
+          <div class="pricing__note">Prices in USD. Taxes may apply.</div>
         </div>
       </section>
     </div>
@@ -41,8 +40,8 @@
           <h3>What are the limitations of the free trial?</h3>
           <div>
             <p>
-              There is no time limit of the free trial, so you can use the trial
-              as long as you want. However, there are several feature limits:
+              We may change the limitations without any notifications in the
+              future releases. The current ones are:
             </p>
             <ul>
               <li>At most 2 connection favorites</li>
@@ -52,6 +51,16 @@
               <li>Bookmark is not available</li>
               <li>Command autocompleter is not available</li>
             </ul>
+          </div>
+        </div>
+        <div class="question">
+          <h3>Can I buy Medis for my team?</h3>
+          <div>
+            <p>
+              Of course! During the checkout flow you can select the quantity,
+              where you can enter how many people you're buying Medis for.
+              You'll receive a separate license key per person.
+            </p>
           </div>
         </div>
         <div class="question">
@@ -68,6 +77,16 @@
               all their softwares in one place. At the same time, some of our
               enterprise users need to be able to purchase software outside of
               the App Store.
+            </p>
+          </div>
+        </div>
+        <div class="question">
+          <h3>What if I don't like it?</h3>
+          <div>
+            <p>
+              Write me an email at
+              <a href="mailto:medis@zihua.li">medis@zihua.li</a> within 30 days
+              of your purchase and I'll send you a refund, no questions asked.
             </p>
           </div>
         </div>
