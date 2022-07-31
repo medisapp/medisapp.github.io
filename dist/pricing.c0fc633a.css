@@ -5,13 +5,11 @@
 
 .pricing__item {
   box-sizing: border-box;
-  width: 350px;
   max-width: 100%;
   text-align: left;
   background-color: #fff;
-  border: 1px solid #ddd;
   border-radius: 6px;
-  margin: 40px auto 60px;
+  margin: 40px auto 0;
   padding: 40px 48px 32px;
   transition: box-shadow .2s;
 }
@@ -19,6 +17,15 @@
 .pricing__item:hover {
   background-color: #fefefe;
   box-shadow: 0 0 10px #0000001a;
+}
+
+.pricing__reviews {
+  margin: 20px auto 40px;
+}
+
+.pricing__reviews, .pricing__item {
+  width: 350px;
+  border: 1px solid #ddd;
 }
 
 .pricing__amount {
