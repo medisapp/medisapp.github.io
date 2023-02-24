@@ -64,6 +64,10 @@ body.zh-cn .no-cn {
     flex-direction: column;
   }
 
+  .main-header nav {
+    margin-left: 0;
+  }
+
   .logo {
     margin-bottom: 20px;
   }
