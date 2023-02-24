@@ -63,6 +63,10 @@ body.zh-cn .no-cn {
   display: flex;
 }
 
+.main-header nav {
+  margin-left: auto;
+}
+
 @media (max-width: 800px) {
   .main-header {
     flex-direction: column;
@@ -79,7 +83,6 @@ body.zh-cn .no-cn {
 }
 
 .logo {
-  flex: 1;
   display: flex;
   align-items: center;
 }
@@ -91,6 +94,14 @@ body.zh-cn .no-cn {
 
 .logo__name {
   margin: 0 0 0 8px;
+}
+
+.logo__name span {
+  transition: color 0.2s;
+}
+
+.logo__name:hover span {
+  color: #efcd49;
 }
 
 nav a {
