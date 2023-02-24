@@ -143,6 +143,27 @@ nav a:hover {
   max-width: 100%;
 }
 
+.new-feature {
+  justify-content: center;
+  align-items: center;
+  margin: 80px 0 -30px;
+  display: flex;
+}
+
+.new-feature a {
+  text-decoration: underline;
+}
+
+.new-feature__badge {
+  text-transform: uppercase;
+  background: #efcd49;
+  border-radius: 5px;
+  margin-right: 8px;
+  padding: 4px;
+  font-size: 9px;
+  font-weight: 700;
+}
+
 .slogan {
   text-align: center;
   margin-top: 60px;
