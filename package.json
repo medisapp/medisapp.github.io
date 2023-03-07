@@ -4,7 +4,7 @@
   "description": "The official website of Medis. This repo is used to track issues related with the Medis app. Feel free to open an issue here if you find any bugs of Medis.",
   "scripts": {
     "start": "parcel *.html",
-    "build": "rm -rf docs && cp -R static docs && NODE_ENV=production parcel build *.html --public-url '.' --dist-dir docs"
+    "build": "rm -rf docs && cp -R static docs && NODE_OPTIONS=--no-experimental-fetch NODE_ENV=production parcel build *.html --public-url '.' --dist-dir docs"
   },
   "repository": {
     "type": "git",
