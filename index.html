@@ -1,191 +1,165 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <include src="fragments/head.html"></include>
-    <script src="./node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
-    <script src="./node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
-    <link
-      rel="stylesheet"
-      href="./node_modules/@splidejs/splide/dist/css/splide.min.css"
-    />
 
-    <title>Medis - Modern GUI for Redis</title>
-  </head>
-  <body>
-    <div class="container">
-      <include src="fragments/header.html"></include>
-      <div class="new-feature">
-        <span class="new-feature__badge">New</span>
-        <a
-          target="_blank"
-          href="https://twitter.com/medisclient/status/1634862060197781506"
-          >Server grouping and colors.</a
-        >
+<head>
+  <include src="fragments/head.html"></include>
+  <script src="./node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
+  <script src="./node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
+  <link rel="stylesheet" href="./node_modules/@splidejs/splide/dist/css/splide.min.css" />
+
+  <title>Medis - Modern GUI for Redis</title>
+</head>
+
+<body>
+  <div class="container">
+    <include src="fragments/header.html"></include>
+    <div class="new-feature">
+      <span class="new-feature__badge">New</span>
+      <a target="_blank" href="https://twitter.com/medisclient/status/1659833911118004224">Improved status bar
+        design.</a>
+    </div>
+    <section class="slogan">
+      <h1>Modern GUI for <span class="cr">Redis</span></h1>
+      <div class="slogan__subtitle">
+        Medis is a modern <span class="cr">Redis</span> GUI designed for
+        Mac.<br />It is trustworthy in critical situations.
       </div>
-      <section class="slogan">
-        <h1>Modern GUI for <span class="cr">Redis</span></h1>
-        <div class="slogan__subtitle">
-          Medis is a modern <span class="cr">Redis</span> GUI designed for
-          Mac.<br />It is trustworthy in critical situations.
+      <div class="reviews">
+        <img src="/static/stars.svg" />
+        <div>
+          <strong>4.8</strong>
+          <span class="reviews__note">Based on user reviews</span>
         </div>
-        <div class="reviews">
-          <img src="/static/stars.svg" />
-          <div>
-            <strong>4.8</strong>
-            <span class="reviews__note">Based on user reviews</span>
-          </div>
-        </div>
-        <section class="download">
-          <div class="download__buttons">
-            <a
-              class="no-cn"
-              href="https://apps.apple.com/app/medis-2-gui-for-redis/id1579200037"
-              ><img
-                src="./download.svg"
-                width="200"
-                alt="Download on the App Store"
-            /></a>
-            <a
-              class="cn"
-              href="https://apps.apple.com/cn/app/medis-2-gui-for-redis/id1579200037"
-              ><img
-                src="./download.svg"
-                width="200"
-                alt="Download on the App Store"
-            /></a>
-            <div class="download-raw-container">
-              <a
-                class="download-raw-link"
-                href="https://api.getmedis.com/medis-latest.zip"
-                target="_blank"
-                ><button
-                  style="width: 200px; height: 59px"
-                  class="download-raw"
-                >
-                  <div class="download-raw__version">macOS 11.0+</div>
-                  <div class="download-raw__title">Download Free Trial</div>
-                </button>
-              </a>
-              <div class="homebrew-popover">
-                <div class="homebrew-popover__content">
-                  <p>Or install Medis like a hacker:</p>
-                  <pre><code>brew install medis</code></pre>
-                  <div class="arrow-down"></div>
-                </div>
+      </div>
+      <section class="download">
+        <div class="download__buttons">
+          <a class="no-cn" href="https://apps.apple.com/app/medis-2-gui-for-redis/id1579200037"><img
+              src="./download.svg" width="200" alt="Download on the App Store" /></a>
+          <a class="cn" href="https://apps.apple.com/cn/app/medis-2-gui-for-redis/id1579200037"><img
+              src="./download.svg" width="200" alt="Download on the App Store" /></a>
+          <div class="download-raw-container">
+            <a class="download-raw-link" href="https://api.getmedis.com/medis-latest.zip" target="_blank"><button
+                style="width: 200px; height: 59px" class="download-raw">
+                <div class="download-raw__version">macOS 11.0+</div>
+                <div class="download-raw__title">Download Free Trial</div>
+              </button>
+            </a>
+            <div class="homebrew-popover">
+              <div class="homebrew-popover__content">
+                <p>Or install Medis like a hacker:</p>
+                <pre><code>brew install medis</code></pre>
+                <div class="arrow-down"></div>
               </div>
             </div>
           </div>
-        </section>
-        <section class="splide screenshot">
-          <div class="splide__track">
-            <ul class="splide__list">
-              <li class="splide__slide">
-                <img width="900" src="./screens/1.png" />
-              </li>
-              <li class="splide__slide">
-                <img width="900" src="./screens/2.png" />
-              </li>
-              <li class="splide__slide">
-                <img width="900" src="./screens/3.png" />
-              </li>
-              <li class="splide__slide">
-                <img width="900" src="./screens/4.png" />
-              </li>
-              <li class="splide__slide">
-                <img width="900" src="./screens/5.png" />
-              </li>
-              <li class="splide__slide">
-                <img width="900" src="./screens/6.png" />
-              </li>
-            </ul>
-          </div>
-        </section>
-        <script>
-          new Splide(".splide").mount();
-        </script>
+        </div>
       </section>
-    </div>
-    <section class="content">
-      <div class="container features">
-        <div class="features__item">
-          <h3 class="features__item__title">Full Featured</h3>
-          <div class="features__item__desc">
-            Medis has proven to be highly compatible with data types like
-            strings, lists, hashes, sets, sorted sets, streams, and even
-            <em>third-party modules</em> like RedisJSON. With its visually
-            appealing user interface, users can easily manage all their data in
-            an enjoyable manner.
-          </div>
+      <section class="splide screenshot">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <img width="900" src="./screens/1.png" />
+            </li>
+            <li class="splide__slide">
+              <img width="900" src="./screens/2.png" />
+            </li>
+            <li class="splide__slide">
+              <img width="900" src="./screens/3.png" />
+            </li>
+            <li class="splide__slide">
+              <img width="900" src="./screens/4.png" />
+            </li>
+            <li class="splide__slide">
+              <img width="900" src="./screens/5.png" />
+            </li>
+            <li class="splide__slide">
+              <img width="900" src="./screens/6.png" />
+            </li>
+          </ul>
         </div>
-        <div class="features__item">
-          <h3 class="features__item__title">Command Query</h3>
-          <div class="features__item__desc">
-            Medis offers a query view that allows users to execute arbitrary
-            commands. It features <em>keyword highlighting</em> and an
-            <em>autocompleter</em>, ensuring maximum clarity and efficiency.
-          </div>
-        </div>
-        <div class="features__item">
-          <h3 class="features__item__title">Tree View</h3>
-          <div class="features__item__desc">
-            Medis adheres to the <span class="cr">Redis</span> community’s
-            standards and provides a customizable tree view that allows users to
-            categorize keys however they prefer.
-          </div>
-        </div>
-        <div class="features__item">
-          <h3 class="features__item__title">High Performance</h3>
-          <div class="features__item__desc">
-            Medis is specifically designed to handle databases with
-            <em>millions</em> of keys and fields seamlessly, ensuring that there
-            are no blocking issues. It works great with your production
-            database.
-          </div>
-        </div>
-        <div class="features__item">
-          <h3 class="features__item__title">Alert Mode</h3>
-          <div class="features__item__desc">
-            Every writable command in alert mode sent to servers will need your
-            approval explicitly. This prevent you from destroying production
-            databases accidentally.
-          </div>
-        </div>
-        <div class="features__item">
-          <h3 class="features__item__title">Data Encoders</h3>
-          <div class="features__item__desc">
-            Medis recognizes different data formats automatically so don't worry
-            if you are using MessagePack for reducing memory usages.
-          </div>
-        </div>
-        <div class="features__item">
-          <h3 class="features__item__title">SSH/SSL</h3>
-          <div class="features__item__desc">
-            Medis allows you to connect to remote servers with an SSH tunnel,
-            and it works great with SSL.
-          </div>
-        </div>
-        <div class="features__item">
-          <h3 class="features__item__title">Dark Mode</h3>
-          <div class="features__item__desc">
-            Of course, Medis supports dark mode!
-          </div>
-        </div>
-      </div>
+      </section>
+      <script>
+        new Splide(".splide").mount();
+      </script>
     </section>
-    <div class="container">
-      <div class="ph">
-        <a
-          href="https://www.producthunt.com/posts/medis-2?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-medis-2"
-          target="_blank"
-          ><img
-            src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=307870&theme=light"
-            alt="Medis 2 - Delightful Redis GUI on macOS | Product Hunt"
-            style="width: 250px; height: 54px"
-            width="250"
-            height="54"
-        /></a>
+  </div>
+  <section class="content">
+    <div class="container features">
+      <div class="features__item">
+        <h3 class="features__item__title">Full Featured</h3>
+        <div class="features__item__desc">
+          Medis has proven to be highly compatible with data types like
+          strings, lists, hashes, sets, sorted sets, streams, and even
+          <em>third-party modules</em> like RedisJSON. With its visually
+          appealing user interface, users can easily manage all their data in
+          an enjoyable manner.
+        </div>
       </div>
-      <include src="fragments/footer.html"></include>
+      <div class="features__item">
+        <h3 class="features__item__title">Command Query</h3>
+        <div class="features__item__desc">
+          Medis offers a query view that allows users to execute arbitrary
+          commands. It features <em>keyword highlighting</em> and an
+          <em>autocompleter</em>, ensuring maximum clarity and efficiency.
+        </div>
+      </div>
+      <div class="features__item">
+        <h3 class="features__item__title">Tree View</h3>
+        <div class="features__item__desc">
+          Medis adheres to the <span class="cr">Redis</span> community’s
+          standards and provides a customizable tree view that allows users to
+          categorize keys however they prefer.
+        </div>
+      </div>
+      <div class="features__item">
+        <h3 class="features__item__title">High Performance</h3>
+        <div class="features__item__desc">
+          Medis is specifically designed to handle databases with
+          <em>millions</em> of keys and fields seamlessly, ensuring that there
+          are no blocking issues. It works great with your production
+          database.
+        </div>
+      </div>
+      <div class="features__item">
+        <h3 class="features__item__title">Alert Mode</h3>
+        <div class="features__item__desc">
+          Every writable command in alert mode sent to servers will need your
+          approval explicitly. This prevent you from destroying production
+          databases accidentally.
+        </div>
+      </div>
+      <div class="features__item">
+        <h3 class="features__item__title">Data Encoders</h3>
+        <div class="features__item__desc">
+          Medis recognizes different data formats automatically so don't worry
+          if you are using MessagePack for reducing memory usages.
+        </div>
+      </div>
+      <div class="features__item">
+        <h3 class="features__item__title">SSH/SSL</h3>
+        <div class="features__item__desc">
+          Medis allows you to connect to remote servers with an SSH tunnel,
+          and it works great with SSL.
+        </div>
+      </div>
+      <div class="features__item">
+        <h3 class="features__item__title">Dark Mode</h3>
+        <div class="features__item__desc">
+          Of course, Medis supports dark mode!
+        </div>
+      </div>
     </div>
-  </body>
+  </section>
+  <div class="container">
+    <div class="ph">
+      <a href="https://www.producthunt.com/posts/medis-2?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-medis-2"
+        target="_blank"><img
+          src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=307870&theme=light"
+          alt="Medis 2 - Delightful Redis GUI on macOS | Product Hunt" style="width: 250px; height: 54px" width="250"
+          height="54" /></a>
+    </div>
+    <include src="fragments/footer.html"></include>
+  </div>
+</body>
+
 </html>

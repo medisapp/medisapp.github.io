@@ -1,128 +1,125 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <include src="fragments/head.html"></include>
-    <link rel="stylesheet" href="./pricing.scss" />
-    <script src="https://cdn.paddle.com/paddle/paddle.js"></script>
-    <script type="module" src="./pricing.js"></script>
-    <title>Pricing - Medis</title>
-  </head>
-  <body>
-    <div class="container">
-      <include src="fragments/header.html"></include>
-      <section class="pricing">
-        <h1>Pricing for individuals and teams</h1>
-        <div class="pricing__item">
-          <div class="pricing__amount">$39</div>
-          <div class="pricing__type">One-time payment</div>
-          <ul class="pricing__details">
-            <li>1 user, up to 2 devices</li>
-            <li>Yours to keep, forever</li>
-            <li>Lifetime upgrades</li>
-            <li>30-day money back guarantee</li>
-          </ul>
-          <button id="buyButton" class="pricing__button">Buy Now</button>
-          <script>
-            document
-              .getElementById("buyButton")
-              .addEventListener("click", () => {
-                Paddle.Checkout.open({ product: PRODUCT_ID });
-              });
-          </script>
-          <div class="pricing__note">Prices in USD. Taxes may apply.</div>
-        </div>
-        <div class="reviews pricing__reviews">
-          <img src="/static/stars.svg" />
-          <div>
-            <strong>4.8</strong>
-            <span class="reviews__note">Based on user reviews</span>
-          </div>
-        </div>
-      </section>
-    </div>
-    <section class="content">
-      <div class="container">
-        <h2>Frequently Asked Questions</h2>
-        <div class="question">
-          <h3>What are the limitations of the free trial?</h3>
-          <div>
-            <p>
-              We may change the limitations without any notifications in the
-              future releases. The current ones are:
-            </p>
-            <ul>
-              <li>At most 1 saved connection</li>
-              <li>At most 1 database window</li>
-              <li>Key content filter is not available</li>
-              <li>Alert mode is not available</li>
-              <li>Bookmark is not available</li>
-              <li>Command autocompleter is not available</li>
-              <li>Copy keys to other databases is not available</li>
-            </ul>
-          </div>
-        </div>
-        <div class="question">
-          <h3>Can I buy Medis for my team?</h3>
-          <div>
-            <p>
-              Of course! During the checkout flow you can select the quantity,
-              where you can enter how many people you're buying Medis for.
-              You'll receive a separate license key per person.
-            </p>
-          </div>
-        </div>
-        <div class="question">
-          <h3>Should I buy Medis on the Mac App Store or from your website?</h3>
-          <div>
-            <p><strong>TL;DR</strong> It's totally up to you. 😃</p>
-            <p>
-              There is no difference in functionality between the two versions.
-              In terms of product design, we also try to avoid adding
-              differentiated features in the future.
-            </p>
-            <p>
-              Many users prefer the App Store version because they can manage
-              all their softwares in one place. At the same time, some of our
-              enterprise users need to be able to purchase software outside of
-              the App Store.
-            </p>
-          </div>
-        </div>
-        <div class="question">
-          <h3>What if I don't like it?</h3>
-          <div>
-            <p>
-              Write me an email at
-              <a href="mailto:medis@zihua.li">medis@zihua.li</a> within 30 days
-              of your purchase and I'll send you a refund, no questions asked.
-            </p>
-          </div>
-        </div>
-        <div class="question">
-          <h3>I have other questions. How can I get in touch with you?</h3>
-          <div>
-            <p>
-              Our email is <a href="mailto:medis@zihua.li">medis@zihua.li</a>.
-              Feel free to contact us whenever you have any questions!
-            </p>
-          </div>
+
+<head>
+  <include src="fragments/head.html"></include>
+  <link rel="stylesheet" href="./pricing.scss" />
+  <script src="https://cdn.paddle.com/paddle/paddle.js"></script>
+  <script type="module" src="./pricing.js"></script>
+  <title>Pricing - Medis</title>
+</head>
+
+<body>
+  <div class="container">
+    <include src="fragments/header.html"></include>
+    <section class="pricing">
+      <h1>Pricing for individuals and teams</h1>
+      <div class="pricing__item">
+        <div class="pricing__amount">$39</div>
+        <div class="pricing__type">One-time payment</div>
+        <ul class="pricing__details">
+          <li>1 user, up to 2 devices</li>
+          <li>Yours to keep, forever</li>
+          <li>Lifetime upgrades</li>
+          <li>30-day money back guarantee</li>
+        </ul>
+        <button id="buyButton" class="pricing__button">Buy Now</button>
+        <script>
+          document
+            .getElementById("buyButton")
+            .addEventListener("click", () => {
+              Paddle.Checkout.open({ product: PRODUCT_ID });
+            });
+        </script>
+        <div class="pricing__note">Prices in USD. Taxes may apply.</div>
+      </div>
+      <div class="reviews pricing__reviews">
+        <img src="/static/stars.svg" />
+        <div>
+          <strong>4.8</strong>
+          <span class="reviews__note">Based on user reviews</span>
         </div>
       </div>
     </section>
+  </div>
+  <section class="content">
     <div class="container">
-      <div class="ph">
-        <a
-          href="https://www.producthunt.com/posts/medis-2?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-medis-2"
-          target="_blank"
-          ><img
-            src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=307870&theme=light"
-            alt="Medis 2 - Delightful Redis GUI on macOS | Product Hunt"
-            style="width: 250px; height: 54px"
-            width="250"
-            height="54"
-        /></a>
+      <h2>Frequently Asked Questions</h2>
+      <div class="question">
+        <h3>What are the limitations of the free trial?</h3>
+        <div>
+          <p>
+            We may change the limitations without any notifications in the
+            future releases. The current ones are:
+          </p>
+          <ul>
+            <li>At most 1 saved connection</li>
+            <li>At most 1 database window</li>
+            <li>Key content filter is not available</li>
+            <li>Alert mode is not available</li>
+            <li>Bookmark is not available</li>
+            <li>Command autocompleter is not available</li>
+            <li>Copy keys to other databases is not available</li>
+          </ul>
+        </div>
       </div>
-      <include src="fragments/footer.html"></include>
+      <div class="question">
+        <h3>Can I buy Medis for my team?</h3>
+        <div>
+          <p>
+            Of course! During the checkout process, you can select the quantity and enter the number of people for whom
+            you are purchasing Medis. You will receive a separate license key for each person.
+          </p>
+        </div>
+      </div>
+      <div class="question">
+        <h3>Should I buy Medis on the Mac App Store or from your website?</h3>
+        <div>
+          <p><strong>TL;DR</strong> It's totally up to you. 😃</p>
+          <p>
+            There is no difference in functionality between the two versions.
+            In terms of product design, we also try to avoid adding
+            differentiated features in the future.
+          </p>
+          <p>
+            Many users prefer the App Store version because they can manage
+            all their softwares in one place. At the same time, some of our
+            enterprise users need to be able to purchase software outside of
+            the App Store.
+          </p>
+        </div>
+      </div>
+      <div class="question">
+        <h3>What if I don't like it?</h3>
+        <div>
+          <p>
+            Write me an email at
+            <a href="mailto:medis@zihua.li">medis@zihua.li</a> within 30 days
+            of your purchase and I'll send you a refund, no questions asked.
+          </p>
+        </div>
+      </div>
+      <div class="question">
+        <h3>I have other questions. How can I get in touch with you?</h3>
+        <div>
+          <p>
+            Our email is <a href="mailto:medis@zihua.li">medis@zihua.li</a>.
+            Feel free to contact us whenever you have any questions!
+          </p>
+        </div>
+      </div>
     </div>
-  </body>
+  </section>
+  <div class="container">
+    <div class="ph">
+      <a href="https://www.producthunt.com/posts/medis-2?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-medis-2"
+        target="_blank"><img
+          src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=307870&theme=light"
+          alt="Medis 2 - Delightful Redis GUI on macOS | Product Hunt" style="width: 250px; height: 54px" width="250"
+          height="54" /></a>
+    </div>
+    <include src="fragments/footer.html"></include>
+  </div>
+</body>
+
 </html>
