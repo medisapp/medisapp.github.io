@@ -32,6 +32,40 @@ h1, h2, h3, h4, h5, h6 {
   padding: 20px 0;
 }
 
+.content.blog {
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+
+.content.blog h1 {
+  text-align: center;
+}
+
+.content.blog article {
+  width: 660px;
+  margin: 0 auto;
+}
+
+.content.blog img.full-size {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.content.blog .blog-section {
+  border-top: 1px dotted #ccc;
+  border-bottom: 1px dotted #ccc;
+  margin: 20px 0;
+  padding: 20px 0;
+}
+
+.content.blog a {
+  color: #f24e3d;
+}
+
+.content.blog a:hover {
+  color: #e85343;
+}
+
 .cn {
   display: none;
 }
