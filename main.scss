@@ -193,6 +193,7 @@ nav a {
 
 .download__buttons {
   display: flex;
+  gap: 10px;
   justify-content: center;
 }
 
@@ -356,7 +357,6 @@ h1 {
 }
 
 .download-raw-link {
-  margin-left: 10px;
   display: flex;
 }
 
@@ -386,19 +386,23 @@ h1 {
 .download-raw-container {
   position: relative;
   display: flex;
+  justify-content: center;
 
   .homebrew-popover {
-    display: none;
+    opacity: 0;
+    transition: all 0.2s;
+    pointer-events: none;
     position: absolute;
     top: 0;
-    transform: translateY(-95%);
+    transform: translate(10px, -90%);
     padding: 20px 0;
+
+    $background: rgb(68, 63, 61);
 
     .homebrew-popover__content {
       display: flex;
-      background: #fefefe;
-      border-radius: 8px;
-      border: 2px solid #efefef;
+      background: $background;
+      border-radius: 4px;
       flex-direction: column;
       align-items: center;
       justify-content: center;
@@ -409,31 +413,31 @@ h1 {
       p {
         margin: 0;
         font-size: 14px;
-        color: #333;
-        opacity: 0.8;
+        color: #efeeee;
       }
 
       pre {
         margin: 10px 10px 0;
         border-radius: 2px;
         padding: 4px 8px;
-        background: #d7d1d1;
-        opacity: 0.7;
+        background: #faf3f3;
         box-sizing: border-box;
       }
 
       .arrow-down {
         position: absolute;
-        bottom: 0;
+        bottom: 1px;
         transform: translateY(100%);
-        border-top-color: #fefefe;
+        border-top-color: $background;
       }
     }
   }
 
   &:hover {
     .homebrew-popover {
-      display: block;
+      opacity: 1;
+      pointer-events: auto;
+      transform: translate(10px, -95%);
     }
   }
 }
@@ -474,4 +478,8 @@ h1 {
     margin-left: 0;
     margin-top: 10px;
   }
+}
+
+.blog-content {
+  line-height: 1.4;
 }

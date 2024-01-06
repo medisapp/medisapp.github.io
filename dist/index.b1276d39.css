@@ -185,6 +185,7 @@ nav a:hover {
 
 .download__buttons {
   justify-content: center;
+  gap: 10px;
   display: flex;
 }
 
@@ -348,7 +349,6 @@ h1 {
 }
 
 .download-raw-link {
-  margin-left: 10px;
   display: flex;
 }
 
@@ -374,22 +374,24 @@ h1 {
 }
 
 .download-raw-container {
+  justify-content: center;
   display: flex;
   position: relative;
 }
 
 .download-raw-container .homebrew-popover {
+  opacity: 0;
+  pointer-events: none;
   padding: 20px 0;
-  display: none;
+  transition: all .2s;
   position: absolute;
   top: 0;
-  transform: translateY(-95%);
+  transform: translate(10px, -90%);
 }
 
 .download-raw-container .homebrew-popover .homebrew-popover__content {
-  background: #fefefe;
-  border: 2px solid #efefef;
-  border-radius: 8px;
+  background: #443f3d;
+  border-radius: 4px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -400,30 +402,30 @@ h1 {
 }
 
 .download-raw-container .homebrew-popover .homebrew-popover__content p {
-  color: #333;
-  opacity: .8;
+  color: #efeeee;
   margin: 0;
   font-size: 14px;
 }
 
 .download-raw-container .homebrew-popover .homebrew-popover__content pre {
-  opacity: .7;
   box-sizing: border-box;
-  background: #d7d1d1;
+  background: #faf3f3;
   border-radius: 2px;
   margin: 10px 10px 0;
   padding: 4px 8px;
 }
 
 .download-raw-container .homebrew-popover .homebrew-popover__content .arrow-down {
-  border-top-color: #fefefe;
+  border-top-color: #443f3d;
   position: absolute;
-  bottom: 0;
+  bottom: 1px;
   transform: translateY(100%);
 }
 
 .download-raw-container:hover .homebrew-popover {
-  display: block;
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(10px, -95%);
 }
 
 .download-raw__version {
@@ -462,6 +464,10 @@ h1 {
     margin-top: 10px;
     margin-left: 0;
   }
+}
+
+.blog-content {
+  line-height: 1.4;
 }
 
 /*# sourceMappingURL=index.b1276d39.css.map */
