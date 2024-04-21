@@ -472,7 +472,7 @@ h1 {
 
 .testimonial-container {
   scrollbar-width: thin;
-  background: radial-gradient(circle, #3b3536 0%, #4c3f41 33%, #372e30 100%);
+  background: linear-gradient(135deg, #ea5455 10%, #feb692 100%);
   padding: 20px 0 0;
 }
 
@@ -493,7 +493,7 @@ h1 {
   text-align: center;
   color: #fff;
   -webkit-text-fill-color: transparent;
-  background: linear-gradient(#aaa, #fff, #fff, #fff, #999);
+  background: linear-gradient(#aaa, #fff, #fff, #fff, #eee);
   -webkit-background-clip: text;
   background-clip: text;
   margin: 20px 0 40px;
@@ -504,13 +504,14 @@ h1 {
 
 .testimonial-item {
   width: 380px;
+  background-color: #0a000033;
   border-radius: 6px;
   padding: 10px 20px 20px;
   transition: background-color .5s;
 }
 
 .testimonial-item:hover {
-  background-color: #0003;
+  background-color: #0a00004d;
 }
 
 .testimonial-item-author {

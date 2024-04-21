@@ -493,6 +493,7 @@ h1 {
     rgba(76, 63, 65, 1) 33%,
     rgba(55, 46, 48, 1) 100%
   );
+  background-image: linear-gradient(135deg, #ea5455 10%, #feb692 100%);
 
   scrollbar-width: thin;
 }
@@ -509,7 +510,6 @@ h1 {
 .testimonial-wrapper {
   overflow: auto;
   padding: 0 20px 20px;
-  // padding-bottom: 20px;
 }
 
 .testimonial-title {
@@ -520,7 +520,7 @@ h1 {
   font-weight: bold;
   padding: 0 20px;
 
-  background: linear-gradient(#aaa, #fff, #fff, #fff, #999);
+  background: linear-gradient(#aaa, #fff, #fff, #fff, #eee);
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -530,9 +530,10 @@ h1 {
   width: 380px;
   transition: background-color 0.5s;
   border-radius: 6px;
+  background-color: rgba(10, 0, 0, 0.2);
 
   &:hover {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(10, 0, 0, 0.3);
   }
 }
 
