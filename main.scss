@@ -189,6 +189,12 @@ nav a {
 
 .reviews__note {
   opacity: 0.6;
+
+  &::before {
+    content: "•";
+    margin-right: 6px;
+    margin-left: 0px;
+  }
 }
 
 .download__buttons {
