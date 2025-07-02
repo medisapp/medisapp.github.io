@@ -20,8 +20,7 @@
 }
 
 .pricing__reviews {
-  width: 200px;
-  margin: -20px auto 40px;
+  margin: 20px auto 40px;
 }
 
 .pricing__reviews, .pricing__item {
