@@ -160,9 +160,9 @@
       });
     }
   }
-})({"6gbjq":[function(require,module,exports,__globalThis) {
+})({"bb71m":[function(require,module,exports,__globalThis) {
 var global = arguments[3];
-var HMR_HOST = null;
+var HMR_HOST = "127.0.0.1";
 var HMR_PORT = null;
 var HMR_SERVER_PORT = 1234;
 var HMR_SECURE = false;
@@ -668,6 +668,6 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 
 },{}],"j4kuM":[function(require,module,exports,__globalThis) {
 
-},{}]},["6gbjq","j4kuM"], "j4kuM", "parcelRequired246", {})
+},{}]},["bb71m","j4kuM"], "j4kuM", "parcelRequired246", {})
 
 //# sourceMappingURL=medisapp.github.io.3464ddca.js.map

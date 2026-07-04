@@ -160,9 +160,9 @@
       });
     }
   }
-})({"7iDWc":[function(require,module,exports,__globalThis) {
+})({"Pq3t8":[function(require,module,exports,__globalThis) {
 var global = arguments[3];
-var HMR_HOST = null;
+var HMR_HOST = "127.0.0.1";
 var HMR_PORT = null;
 var HMR_SERVER_PORT = 1234;
 var HMR_SECURE = false;
@@ -673,6 +673,6 @@ Paddle.Setup({
 Paddle.Environment.set("sandbox");
 window.PRODUCT_ID = Number("28229");
 
-},{}]},["7iDWc","fcPP7"], "fcPP7", "parcelRequired246", {})
+},{}]},["Pq3t8","fcPP7"], "fcPP7", "parcelRequired246", {})
 
 //# sourceMappingURL=introduction.3a76f701.js.map
