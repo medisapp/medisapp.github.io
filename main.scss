@@ -565,3 +565,235 @@ h1 {
 .testimonial-item-country {
   opacity: 0.8;
 }
+
+.partner-certificate-page {
+  min-height: 100vh;
+}
+
+.partner-certificate-content {
+  background: transparent;
+  padding-bottom: 70px;
+}
+
+.partner-certificate {
+  max-width: 1000px;
+  margin: 28px auto;
+  color: #050505;
+  font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Microsoft YaHei", sans-serif;
+}
+
+.partner-certificate__page-title {
+  margin: 0 0 32px;
+  color: #2a2a2a;
+  font-family: var(--font-title);
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: left;
+}
+
+.partner-certificate__paper {
+  max-width: 878px;
+  margin: 0 auto;
+  padding: 0 28px 54px;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid rgba(227, 199, 208, 0.48);
+  border-radius: 2px;
+  box-shadow: 0 18px 42px rgba(62, 42, 51, 0.09),
+    0 2px 8px rgba(62, 42, 51, 0.05);
+  text-align: center;
+}
+
+.partner-certificate__logo-frame {
+  height: 306px;
+  margin: 0 auto 62px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.partner-certificate__logo {
+  width: 1024px;
+  max-width: none;
+  height: auto;
+  margin-top: -105px;
+  display: block;
+}
+
+.partner-certificate__title {
+  margin: 0;
+  color: #000;
+  font-family: inherit;
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 1.18;
+}
+
+.partner-certificate__subtitle {
+  margin: 26px 0 80px;
+  color: #a5a5a5;
+  font-size: 44px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.partner-certificate__section {
+  margin: 0 auto;
+}
+
+.partner-certificate__section + .partner-certificate__section {
+  margin-top: 76px;
+}
+
+.partner-certificate__cn,
+.partner-certificate__en,
+.partner-certificate__product,
+.partner-certificate__links {
+  margin: 0;
+}
+
+.partner-certificate__cn {
+  font-size: 26px;
+  font-weight: 800;
+  line-height: 1.35;
+}
+
+.partner-certificate__en {
+  margin-top: 20px;
+  font-size: 27px;
+  font-weight: 400;
+  line-height: 1.35;
+}
+
+.partner-certificate__product {
+  margin-top: 17px;
+  font-size: 27px;
+  font-weight: 800;
+  line-height: 1.35;
+}
+
+.partner-certificate__links {
+  margin-top: 18px;
+  font-size: 27px;
+  line-height: 1.35;
+}
+
+.partner-certificate__links a {
+  color: #00f;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.partner-certificate__links span {
+  display: inline-block;
+  margin: 0 14px;
+}
+
+@media (max-width: 700px) {
+  .partner-certificate__paper {
+    padding: 0 20px 42px;
+  }
+
+  .partner-certificate__page-title {
+    margin-bottom: 34px;
+    font-size: 40px;
+  }
+
+  .partner-certificate__logo-frame {
+    height: 238px;
+    margin-bottom: 44px;
+  }
+
+  .partner-certificate__logo {
+    width: 790px;
+    margin-top: -81px;
+  }
+
+  .partner-certificate__title {
+    font-size: 32px;
+  }
+
+  .partner-certificate__subtitle {
+    margin: 20px 0 58px;
+    font-size: 36px;
+  }
+
+  .partner-certificate__section + .partner-certificate__section {
+    margin-top: 58px;
+  }
+
+  .partner-certificate__cn {
+    font-size: 23px;
+  }
+
+  .partner-certificate__en,
+  .partner-certificate__product,
+  .partner-certificate__links {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .partner-certificate-content {
+    padding-bottom: 44px;
+  }
+
+  .partner-certificate {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .partner-certificate__paper {
+    padding-inline: 16px;
+  }
+
+  .partner-certificate__page-title {
+    margin-bottom: 26px;
+    font-size: 34px;
+    text-align: center;
+  }
+
+  .partner-certificate__logo-frame {
+    height: 172px;
+    margin-bottom: 34px;
+  }
+
+  .partner-certificate__logo {
+    width: 580px;
+    margin-top: -59px;
+  }
+
+  .partner-certificate__title {
+    font-size: 28px;
+  }
+
+  .partner-certificate__subtitle {
+    margin: 16px 0 46px;
+    font-size: 30px;
+  }
+
+  .partner-certificate__section + .partner-certificate__section {
+    margin-top: 46px;
+  }
+
+  .partner-certificate__cn {
+    font-size: 20px;
+  }
+
+  .partner-certificate__en,
+  .partner-certificate__product,
+  .partner-certificate__links {
+    font-size: 21px;
+  }
+
+  .partner-certificate__links a,
+  .partner-certificate__links span {
+    display: block;
+  }
+
+  .partner-certificate__links span {
+    margin: 4px 0;
+  }
+}
